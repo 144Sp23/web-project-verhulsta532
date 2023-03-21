@@ -1,0 +1,162 @@
+/* 
+Author: Allison Verhulst
+Date: 3-21-23
+File Name: Styles.css
+*/
+
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, div, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Begin Style rules for moblie viewport */
+
+/*Style rules for header */
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: black;
+    height: 190px;
+}
+
+header img {
+    margin: 0 auto;
+}
+
+nav {
+    margin-bottom: 1%;
+    margin-right: 5%;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+    border-top: 1px solid #fff;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+.mobile {
+    display: block;
+}
+
+.tablet-desktop {
+    display: none;
+}
+
+
+main {
+    background-color: black;
+    padding: 2%;
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.email-link {
+    color: crimson;
+    text-decoration: none;
+}
+
+.netflix-link: {
+    color: white;
+    text-decoration: none;
+}
+
+.netflix-link:active {
+    color: crimson;
+}
+
+.netflix-link:visited {
+    color: white;
+}
+
+#Alina, #Mal, #Darkling, #Kaz, #Inej, #Jesper {
+    margin-left: 7%;
+}
+
+footer p {
+    font-size: 0.75em;
+    text-align: center;
+    color: white;
+    padding:  0 6em;
+}
+
+footer p a {
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 630px) {
+    
+    .tablet-desktop{
+        display: block;
+    }
+    
+    .mobile {
+        display: none;
+    }
+    
+    header {
+        position: static;
+        padding-bottom: 2%;
+    }
+    
+    nav li {
+        border-top: none;
+        display: inline-block;
+        border-right: 1px solid #fff;         
+    }
+    
+    nav li:last-child {
+        border-right: none;
+    }
+    
+    nav li a {
+        padding: 0.1em 0.75em;
+    }
+    
+    main ul {
+        margin: 0 0 4% 10%;
+    }
+    
+    #Alina, #Mal, #Darkling {
+    width: 30%;
+    float: left;
+    margin: 1%;
+    }
+
+    #Kaz, #Inej, #Jesper {
+    width: 30%;
+    float:left;
+    margin: 1%;
+    }
+    
+    
+}
+
